@@ -7,24 +7,24 @@ import Pricing from './components/Pricing';
 import QA from './components/QA';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
-import CookieConsent from './components/CookieConsent';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
     return (
-        <div className="app">
-            <Navbar />
-            <main>
-                <Hero />
-                <SocialProof />
-                <Features />
-                <UseCases />
-                <Pricing />
-                <QA />
-                <CallToAction />
-            </main>
-            <Footer />
-            <CookieConsent />
-        </div>
+        <ThemeProvider>
+            <div className="app">
+                <Navbar />
+                <main>
+                    <Hero />
+                    <SocialProof />
+                    <Features />
+                    <UseCases />
+                    <Pricing />
+                    <CallToAction />
+                </main>
+                <Footer />
+            </div>
+        </ThemeProvider>
     );
 }
 
