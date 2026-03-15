@@ -146,7 +146,7 @@ body {
   transition: background var(--transition-base), border-color var(--transition-base);
 }
 
-/* Add global transitions for themeable elements */
+/* Global transitions for themeable elements */
 .features__card, .pricing__card, .use-cases__illustration, .btn, .navbar__link, .social-proof__logo-placeholder {
   transition: all var(--transition-base);
 }
